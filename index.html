@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif; 
+      color: #683D2E;
+    }
+    .pricing-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 2rem;
+    }
+    .pricing-plan{
+      position: relative;
+      top: 50px;
+      padding: 5px;
+      background-color:#ead9ce;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border-radius: 60px;
+      height: auto;
+      width: 300px;
+    }
+    .plan-title{
+      text-align: center;
+      font-size: larger;
+      font-weight: 900;
+      padding: 10px;
+    }
+    .plan-price{
+      text-align: center;
+      font-size: x-large;
+    }
+    .plan-features{
+      list-style: none;
+      font-size: medium;
+      font-weight: bold;
+      position: relative;
+      left: 20px;
+      padding: 10px 10px 15px 15px;
+    }
+    button{
+      position: relative;
+      font-size: small;
+      left: 100px;
+      top: -5px;
+      border-style: hidden;
+      background-color: #F3EDE1;
+      color:#3c190c;
+      border-radius: 15px;
+      padding: 10px;
+    }
+    button:hover{
+      background-color: #cdb0a9c0;
+      outline-color: #e6dfdc;
+      box-shadow: 0 0 0 1px #896852;
+    }
+    button:focus{
+      outline-color: #896852;
+    }
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1000px) {
+      .pricing-container{
+        flex-direction: column;
+        height:100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$9.99/month</div>
+      <ul class="plan-features">
+        <li>✓ 10GB Storage</li>
+        <li>✓ 1 User</li>
+        <li>✗  Support</li>
+      </ul>
+      <button class="plan-button">More Info</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div>
+      <ul class="plan-features">
+        <li>✓ 50GB Storage</li>
+        <li>✓ 5 Users</li>
+        <li>✓ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">More Info</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✓ 100GB Storage</li>
+        <li>✓ 10 Users</li>
+        <li>✓ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">More Info</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
